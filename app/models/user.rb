@@ -4,7 +4,6 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, if: :password_confirmation_or_more?
   validates :zip,                   presence: true, if: :set_address_or_more?
   validates :address1,              presence: true, if: :set_address_or_more?
-  validates :address2,              presence: true, if: :set_address_or_more?
 
   private
 
