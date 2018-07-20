@@ -82,3 +82,8 @@ div {
 label {
   display: block;
 }
+
+.required:after {
+  content: " *";
+  color: #f00
+}

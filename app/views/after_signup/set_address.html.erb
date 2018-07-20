@@ -1,12 +1,12 @@
 <%= render layout: 'form' do |f| %>
   <div class="field">
-    <%= f.label :zip %>
-    <%= f.text_field :zip %>
+    <%= f.label :zip, class: 'required' %>
+    <%= f.text_field :zip, required: true, pattern: '^\d{7}$', title: 'ハイフンなしの７桁の半角数字で入力' %>
   </div>
 
   <div class="field">
-    <%= f.label :address1 %>
-    <%= f.text_field :address1 %>
+    <%= f.label :address1, class: 'required' %>
+    <%= f.text_field :address1, required: true %>
   </div>
 
   <div class="field">
