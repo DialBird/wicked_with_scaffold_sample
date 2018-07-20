@@ -13,32 +13,7 @@
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.text_field :password_confirmation %>
-  </div>
-
-  <div class="field">
-    <%= form.label :zip %>
-    <%= form.text_field :zip %>
-  </div>
-
-  <div class="field">
-    <%= form.label :address1 %>
-    <%= form.text_field :address1 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :address2 %>
-    <%= form.text_field :address2 %>
+    <%= form.text_field :email, required: true %>
   </div>
 
   <div class="actions">
